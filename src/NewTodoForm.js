@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { v4 as uuidv4 } from 'uuid';
+import './NewTodoForm.css';
 
 // NewTodoForm - this component should render a form with one text input for the task to be created.
 // When this form is submitted, a new Todo component should be created.
@@ -30,8 +31,8 @@ export default class NewTodoForm extends Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
-                <label htmlFor="task">New Task</label>
+                <form className="NewTodoForm" onSubmit={this.handleSubmit}>
+                <label htmlFor="task">New Todo</label>
                     <input
                         placeholder="New Todo"
                         type="text"
